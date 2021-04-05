@@ -12,4 +12,7 @@ For example the phrase `'HELLO WORLD'` would be represented like this:
 ['**** * *-** *-** ---', '*-- --- *-* *-** -**']
 ```
 
+If an input contains an unknown character such as `$` please return this error as a string: 
+`Please enter a valid input.`
+
 Goot Luck!

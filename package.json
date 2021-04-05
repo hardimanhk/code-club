@@ -1,0 +1,22 @@
+{
+  "name": "code-club",
+  "version": "1.0.0",
+  "description": "Code club for the cool kids.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardimanhk/code_club.git"
+  },
+  "author": "hillaryhardiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardimanhk/code_club/issues"
+  },
+  "homepage": "https://github.com/hardimanhk/code_club#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}

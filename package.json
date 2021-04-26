@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:morseCode": "jest ./morseCode/solutions",
-    "test:foibonacci": "jest ./fibonacci/solutions"
+    "test:fibonacci": "jest ./fibonacci/solutions"
   },
   "repository": {
     "type": "git",

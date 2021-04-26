@@ -15,7 +15,7 @@ test('Hello World with whitespace', () => {
 });
 
 test('unkown char', () => {
-  expect(toMorseCode('$')).toStrictEqual(['Please enter a valid input.']);
+  expect(toMorseCode('$ $')).toStrictEqual(['Please enter a valid input.']);
 });
 
 test('numbers', () => {

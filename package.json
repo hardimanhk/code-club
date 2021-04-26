@@ -4,7 +4,8 @@
   "description": "Code club for the cool kids.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test:morseCode": "jest ./morseCode/solutions",
+    "test:foibonacci": "jest ./fibonacci/solutions"
   },
   "repository": {
     "type": "git",

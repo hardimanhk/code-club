@@ -6,4 +6,4 @@ Current challenges:
 * Morse code translator
   * to run tests: `npm run test:morseCode`
 * Fibonacci sequence calculator
-  * to run test: `npm run test:fibonacci`
+  * to run tests: `npm run test:fibonacci`

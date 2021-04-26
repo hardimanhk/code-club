@@ -1,5 +1,3 @@
-let errorOccurred = false;
-
 const toMorseCode = (phrase) => {
     let translatedPhrase = [];
     let translatedWord = '';
@@ -12,11 +10,9 @@ const toMorseCode = (phrase) => {
     let trimmedPhraseSpreadOut = [...trimmedPhrase];
     for (char of trimmedPhraseSpreadOut) {
         charCoded = dict.get(char);
-        errorOccurred = checkForError(charCoded);
-        if (errorOccurred) {
+        if (checkForError(charCoded)) {
             translatedPhrase = [];
             translatedPhrase.push(errorMessage);
-            console.log('error: ', errorOccurred, translatedPhrase)
             return translatedPhrase;
         }
         if (charCoded === ' ' || trimmedPhraseSpreadOut.length === trimmedPhraseSpreadOut.indexOf(char)) {
@@ -25,16 +21,13 @@ const toMorseCode = (phrase) => {
                 translatedWord = '';
             }
         } else {
-
             translatedWord = translatedWord.concat(charCoded + ' ');
         }
     }
     if (translatedWord.length > 0) {
         translatedPhrase.push(translatedWord.slice(0, -1));
     }
-    if (!errorOccurred) {
-        return translatedPhrase
-    }
+    return translatedPhrase
 }
 
 const checkForError = (char) => {
